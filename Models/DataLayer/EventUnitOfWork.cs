@@ -22,6 +22,6 @@ namespace FreidrdEventApp4.Models.DataLayer
             }
         }
 
-        public void Save() => context.SaveChanges();
+		public void Save() => context.SaveChanges();
     }
 }
