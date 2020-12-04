@@ -39,6 +39,14 @@ namespace FreidrdEventApp4.Controllers
 			}
 		}
 
+		[HttpPost]
+		public ViewResult Edit(int id)
+		{
+
+			return View();
+
+		}
+
 		[HttpGet]
 		public ViewResult delete(int id)
 		{
