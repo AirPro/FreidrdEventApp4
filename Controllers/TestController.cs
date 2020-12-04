@@ -26,16 +26,8 @@ namespace FreidrdEventApp4.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-				if (e.EventId == 0)
-				{
-					events.Insert(e);
-					events.Save();
-				}
-				else
-				{
-					events.Update(e);
-					events.Save();
-				}
+				events.Insert(e);
+				events.Save();
 				return RedirectToAction("Index");
 			}
 			else
