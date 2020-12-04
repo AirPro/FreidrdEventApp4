@@ -23,7 +23,7 @@ namespace FreidrdEventApp4.Controllers
 
 		}
 
-		[HttpGet]
+		//[HttpGet]
 		//public IActionResult Edit(int id)
 		//{
 		//	return View(events.get(id));
