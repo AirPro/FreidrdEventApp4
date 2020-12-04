@@ -23,6 +23,14 @@ namespace FreidrdEventApp4.Controllers
             return View(events);
         }
 
+        [HttpPost]
+        public ViewResult Edit(int id)
+        {
+
+            return View();
+
+        }
+
         public IActionResult Privacy()
         {
             return View();
