@@ -27,25 +27,23 @@ namespace FreidrdEventApp4.Controllers
 			if (ModelState.IsValid)
 			{
 				if (e.EventId == 0)
+				{
 					events.Insert(e);
+					events.Save();
+				}
 				else
+				{
 					events.Update(e);
-				events.Save();
+					events.Save();
+				}
 				return RedirectToAction("Index");
 			}
 			else
 			{
-				return View(events);
+				return View(e);
 			}
 		}
 
-		[HttpPost]
-		public ViewResult Edit(int id)
-		{
-
-			return View();
-
-		}
 
 		[HttpGet]
 		public ViewResult delete(int id)
