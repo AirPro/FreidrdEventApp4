@@ -1,12 +1,8 @@
-﻿using FreidrdEventApp4.Models;
+﻿
 using FreidrdEventApp4.Models.DataLayer;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace FreidrdEventApp4.Controllers
 {
