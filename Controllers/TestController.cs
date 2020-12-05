@@ -36,16 +36,16 @@ namespace FreidrdEventApp4.Controllers
 			}
 		}
 
-		[HttpPost]
-		public ViewResult EditEvent(int id)
-		{
-			return View();
-		}
-
 		[HttpGet]
 		public IActionResult Edit(int id)
 		{
 			return View(events.get(id));
+		}
+
+		[HttpPost]
+		public ViewResult EditEvent(int id)
+		{
+			return View();
 		}
 
 		[HttpGet]
